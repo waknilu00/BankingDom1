@@ -10,6 +10,7 @@ import com.base.BaseClass;
 import com.pom.LoginPom;
 
 public class LoginTest extends BaseClass {
+	
 
 	@BeforeMethod
 	public void setUp() {
@@ -31,7 +32,8 @@ public class LoginTest extends BaseClass {
 	public void loginTest() {
 
 		LoginPom login = new LoginPom();
-		login.setInputUsername(login.getUsername());
+	System.out.println("..........................");
+	login.setInputUsername(login.getUsername());
 		login.setInputPassword(login.getPassword());
 		login.clickOnButton();
 
